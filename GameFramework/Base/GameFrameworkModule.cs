@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    internal abstract class GameFrameworkModule
+    public abstract class GameFrameworkModule
     {
         /// <summary>
         /// 获取游戏框架模块的优先级

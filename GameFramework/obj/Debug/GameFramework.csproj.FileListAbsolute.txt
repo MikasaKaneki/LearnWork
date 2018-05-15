@@ -1,0 +1,2 @@
+D:\Document\code\C#\GameFramework\GameFramework\obj\Debug\GameFramework.csprojResolveAssemblyReference.cache
+D:\Document\code\C#\GameFramework\GameFramework\obj\Debug\GameFramework.csproj.CoreCompileInputs.cache

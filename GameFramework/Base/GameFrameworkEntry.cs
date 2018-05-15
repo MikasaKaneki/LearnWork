@@ -43,7 +43,9 @@ namespace GameFramework
                 current.Value.Shutdown();
             }
             s_GameFrameworkModules.Clear();
-            //TODO 清理反射池和清空log辅助工具
+
+            ReferencePool.ClearAll();
+            Log.SetLogHelper(null);
         }
 
         /// <summary>
@@ -85,7 +87,7 @@ namespace GameFramework
         /// <param name="moduleType">要获取的游戏框架模块类型</param>
         /// <returns>要获取游戏框架</returns>
         /// <remarks>如果要获取的游戏框架模块不存在，则自动创建该游戏框架模块</remarks>
-        public static GameFrameworkModule GetModule(Type moduleType)
+        private static GameFrameworkModule GetModule(Type moduleType)
         {
             foreach (GameFrameworkModule module in s_GameFrameworkModules)
             {
